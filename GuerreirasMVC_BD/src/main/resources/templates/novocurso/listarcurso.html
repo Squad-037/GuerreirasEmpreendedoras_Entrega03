@@ -46,16 +46,9 @@
 					<tbody>
 				<tr th:each="cursos : ${cursos}">
 					    <th scope="row" th:text="${cursos.id}"></th>
-					    
-						
 						<td>
     						<a th:text="${cursos.nome_curso}" th:href="@{/novocurso/{id} (id=${cursos.id})}"></a>
 						</td>
-						
-			
-						
-
-
 					    <td th:text="${cursos.descricao}"></td>
 					    <td th:text="${cursos.nivel}"></td>
 					    <td th:text="${cursos.valor}"></td>
@@ -69,11 +62,6 @@
     						<img alt="Image" class="img_prod" height="70px" width="50px"
         					th:src="@{'/novocurso/imagem/' + ${cursos.id}}" />
 						</td>
-
-					    
-					    
-					    
-					    
 					    <td>
 					        <a th:href="@{/novocurso/{id}/editar (id=${cursos.id})}" class="btn btn-warning">
 					            Editar
@@ -93,6 +81,10 @@
 			<div class="col-sm-12">
 				<a th:href="@{/novocurso/novocurso}" class="btn btn-primary">Cadastrar novo Curso</a>
 			</div>
+		</div>
+		<div class="d-flex justify-content-center align-items-center">
+			<img class="card-img-top" style="width: 100px; height: 100px; margin-right: 15px" src="../img/cursos/certificado-ead.gif"/>
+			<h4 class="fw-bold">Todos os nossos cursos têm certificado.</h4>
 		</div>
 	</main>
 	 <!-- RODAPÉ -->

@@ -46,20 +46,16 @@
 						<tr th:each="cadastro : ${cadastros}">
 							<th scope="row" th:text="${cadastro.id}"></th>
 							<td>
-								<a th:text="${cadastro.nome}" th:href="@{/cadastro/{id} (id=${cadastro.id})}"></a>
+								<a th:text="${cadastro.nome}" th:href="@{/usuario/{id} (id=${cadastro.id})}"></a>
 							</td>
 							<td th:text="${cadastro.cpf}"></td>
 							<td th:text="${cadastro.dataNascimento}"></td>
 							<td th:text="${cadastro.telefone}"></td>
 							<td th:text="${cadastro.redeSocial}"></td>
 							<td>
-								<a th:href="@{/cadastro/{id}/editar (id=${cadastro.id})}" class="btn btn-warning">
-									Editar
-								</a>
-								<a th:href="@{/cadastro/{id}/excluir (id=${cadastro.id})}" class="btn btn-danger"
-									onclick="return confirm('Tem certeza que deseja excluir o cadastro?');">
-									Excluir
-								</a>
+								<a th:href="@{/usuario/{id}/editar(id=${cadastro.id})}" class="btn btn-warning"> Editar </a>
+								<a th:href="@{/usuario/{id}/excluir (id=${cadastro.id})}" class="btn btn-danger" 
+								onclick="return confirm('Tem certeza que deseja excluir o cadastro?');"> Excluir </a>
 							</td>
 						</tr>
 					</tbody>
@@ -68,7 +64,7 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
-				<a th:href="@{/cadastro/cadastrar}" class="btn btn-primary">Cadastrar novo Usuario</a>
+				<a th:href="@{/cadastrar}" class="btn btn-primary">Cadastrar novo Usuario</a>
 			</div>
 		</div>
 	</main>
