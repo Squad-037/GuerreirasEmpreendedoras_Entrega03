@@ -36,7 +36,7 @@
 			<div class="d-flex">
 				<button class="navbar-toggler border-0 d-lg-none order-3" type="button" data-bs-toggle="offcanvas"
 					data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
-					<img id="togglerLogo" src="../../img/favicons/Mae.png" fill="currentColor">
+					<img id="togglerLogo" src="../img/favicons/Mae.png" fill="currentColor">
 				</button>
 			</div>
 			<!-- Menu mobile -->
@@ -67,13 +67,13 @@
 						</li>
 						<!-- Cursos -->
 						<li class="nav-item col-6 col-lg-auto">
-							<a class="nav-link" href="/curso">Cursos</a>
+							<a class="nav-link" href="/novocurso/listarcurso">Cursos</a>
 						</li>
 						<!-- Serviços -->
 						<li class="nav-item col-6 col-lg-auto">
-							<a class="nav-link" href="/cadastro">Cadastro</a>
+							<a class="nav-link" href="/usuario">Listar Usuários</a>
 						</li>
-						<!-- Feed-->
+						<!-- Postagens -->
 						<li class="nav-item col-6 col-lg-auto">
 							<a class="nav-link" href="/postagens/listarPostagem">Feed</a>
 						</li>
@@ -92,7 +92,6 @@
 								<small class="d-lg-none ms-2">Github</small>
 							</a>
 						</li>
-
 						<li class="nav-item col-6 col-lg-auto"><!-- Linkedin -->
 							<a class="nav-link" href="https://www.linkedin.com/in/squad037/" target="_blank"
 								rel="noopener">
@@ -111,13 +110,14 @@
 							<hr class="d-lg-none my-2 text-white-50">
 						</li>
 
-						<div class="nav-item col-12 col-lg-auto"><!-- Botões de Login/Cadastro -->
-							<!-- <a class="btn btn-outline-primary" role="button" href="assets/html/login.html">
-                                Login
-                            </a> -->
-							<a class="btn btn-primary" role="button" href="/login">
-								Entrar
-							</a>
+						<div class="nav-item col-12 col-lg-auto">
+							<!-- Botões de Login/Cadastro -->
+							<a class="btn btn-primary" role="button" href="/login">Entrar</a>
+						</div>
+						<div class="nav-item col-12 col-lg-auto">
+							<form action="/logout" method="post">
+								<button class="btn btn-primary" type="submit">Sair</button>
+							</form>
 						</div>
 					</ul>
 				</div>
